@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Example</title>
+
+    <style>
+        /* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header стили */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+    background-color:  rgba(0, 0, 0, 0.5);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/* Логотип */
+.logo  {
+    weight: 80px;
+    margin:auto;
+    heigth: 80px;
+}
+
+/* Навигация */
+
+.nav .button {
+    background-color:  rgba(0, 0, 0, 0.5);
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+
+
+/* Для мобильных устройств */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .cta {
+        margin-top: 10px;
+    }
+
+    .nav {
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+       <img class="logo" src="img/logo.png" alt="logo" style = "width: 50px; height: 50px;transform: translate(-555px,0); ">
+        <div class="nav">
+            <a href="begin.html"  target="_blank"class="button">На главную</a>
+            <a href="about_us.html" target="_blank" class="button">О нас</a>
+            <a href="contacts.html" target="_blank" class="button">Контакты</a>
+        </div>
+    </header>
+    <script></script>
+</body>
+</html>
